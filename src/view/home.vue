@@ -1,14 +1,8 @@
 <template>
   <div class="body">
+    <nav-bar />
     <!-- 解析标签时 会把大写的字母B解析为-b -->
     <div class="header">
-      <nav-bar/>
-      <van-search 
-        v-model="value" 
-        placeholder="请输入搜索关键词" 
-        shape="round"
-        background="#0EA7FB"
-      />
       <van-swipe :auto="4000" class="swipe">
         <van-swipe-item v-for="item in pictures" :key="item.id">
           <img :src="item.url" class="img"/>
@@ -18,8 +12,8 @@
       <van-tabs>
         <van-tab title="最热">
           <div class="tab1Content">
-            <div class="hottest">
-              <game v-for="(item, i) in hottest" :key="item.id" :post="item" />
+            <div class="hottest" @touchstart="linkGame">
+              <game v-for="(item, i) in hottest" :key="item.id" :post="item"/>
             </div>
           </div>
         </van-tab>
@@ -33,7 +27,7 @@
         <van-tab title="评分最高">
           <div class="tab1Content">
             <div class="highest">
-              <game v-for="(item, i) in highest" :key="item.id" :post="item" />
+              <game v-for="(item, i) in highest" :key="item.id" :post="item"/>
             </div>
           </div>
         </van-tab>
@@ -42,18 +36,18 @@
     <div class="bottomTabs">
       <van-tabbar>
         <van-tabbar-item replace to="/home" name="home" icon="home-o">首页</van-tabbar-item>
-        <van-tabbar-item replace to="/mine" name="setting" icon="setting-o">我的</van-tabbar-item>
+        <van-tabbar-item replace to="/mine" name="setting" icon="setting-o">游戏</van-tabbar-item>
       </van-tabbar>
     </div>
   </div>
 </template>
 
 <script>
-  import navBar from '../components/navBar.vue'
   import game from '../components/game.vue'
+  import navBar from '@/components/navBar.vue'
   export default {
     name: 'home',
-    components: {navBar, game },
+    components: {game, navBar },
     data() {
       return {
         value: "", 
@@ -120,6 +114,12 @@
         ],
       }
     },
+    methods: {
+      linkGame() {
+        console.log("1")
+        window.location.href="static/watermelon/index.html"
+      }
+    }
   }
 </script>
 
