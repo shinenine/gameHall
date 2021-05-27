@@ -26,6 +26,7 @@
 <style scoped>
 .gameItem
 {
+  border-bottom: 1px solid gray;
   display: flex;
 }
 
@@ -38,23 +39,35 @@
 
 .words div
 {
-  margin-left: 3%;
+  margin-left: 1rem;
+}
+
+.description
+{
+  margin-bottom: 1rem;
 }
 
 .title
 {
   font-size: 2rem;
-  padding-top: 3rem;
-  margin-bottom: 3rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .imgBox
 {
+  position: relative;
   float: left;
-  width: 30%;
-  align-items: baseline;
-  transform: scale(0.5);
-  margin-right: 5%;
+  width: 40%;
+  height: 10%;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+.gameAvator
+{
+  width: 180px;
+  height: 100px;
 }
 
 </style>

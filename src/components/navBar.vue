@@ -1,6 +1,6 @@
 <template>
-  <div class="navBar">
-    <van-nav-bar title="导航栏" left-text="返回" :fixed=ifFixed />
+  <div>
+    <van-nav-bar title="导航栏" left-text="< back" :fixed=ifFixed class="navBar"/>
   </div>
 </template>
 
@@ -16,8 +16,8 @@
 </script>
 
 <style scoped>
-  .navbar
+  /* .navbar
   {
-    height: 1rem;
-  }
+    background-color: wheat;
+  } */
 </style>
