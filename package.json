@@ -16,6 +16,7 @@
   "dependencies": {
     "ajv": "^6.12.6",
     "element-ui": "^2.15.1",
+    "jquery": "^3.6.0",
     "mint-ui": "^2.2.13",
     "vant": "^2.12.20",
     "vue": "^2.5.2",
