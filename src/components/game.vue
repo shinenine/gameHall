@@ -1,13 +1,14 @@
 <template>
+
   <div class="gameItem">
-    <div class="words">
-      <div class="title">{{ post.name }}</div>
-      <div class="type">{{ post.gameType }}</div>
-      <button class="button" @click="linkGame">开始</button>
-    </div>
     <div class="imgBox">
       <img :src="post.url" class="gameAvator" />
     </div>
+    <div class="words">
+      <div class="title">{{ post.name }}</div>
+      <button class="button" @click="linkGame"><b>开始</b></button>
+    </div>
+
     <!-- 重构单文件组件，使其单独接受一个post参数 -->
   </div>
 </template>
@@ -38,12 +39,13 @@
 
 <style scoped>
   .gameItem {
+    border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     display: flex;
   }
 
   .words {
-    float: left;
+    float: right;
     width: 70%;
     text-align: left;
   }
@@ -52,44 +54,41 @@
     margin-left: 1rem;
   }
 
-  .description {
-    margin-bottom: 1rem;
-  }
-
   .title {
     font-size: 2rem;
     padding-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
   }
 
   .button {
     width: 5rem;
     height: 2rem;
     margin-left: 1rem;
-    border: 1px solid;
-    border-radius: 5px;
+    border: 0.1px;
+    border-radius: 20px;
     background-color: transparent;
     line-height: 2px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 20px;
-    font-weight: 300;
-    background-color: #4cc9f0;
+    color: #0EA7FB;
+    background-color: #E4E5E5;
     margin-bottom: 2rem;
   }
 
 
   .imgBox {
     position: relative;
-    float: left;
+    float: right;
     width: 40%;
     height: 10%;
     margin-right: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .gameAvator {
-    width: 180px;
+    width: 160px;
     height: 100px;
   }
 

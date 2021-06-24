@@ -134,4 +134,8 @@
     margin-top: 5rem;
   }
 
+  .gameList {
+    margin-top: 2rem;
+  }
+
 </style>
