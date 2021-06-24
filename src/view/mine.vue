@@ -34,7 +34,7 @@
             url: require("../assets/angryBird.jpg"),
             name: "愤怒的小鸟",
             gameType: "relax",
-            gameUrl: "#",
+            gameUrl: "/static/angrybirds/index.html",
           },
           {
             id: 2,
@@ -75,41 +75,48 @@
 
         normal: [{
             id: 1,
-            url: require("../assets/game1.png"),
-            name: "game1",
-            gameType: "action",
-            gameDescription: "funny funny funny funny funny funny funny funny "
+            url: require("../assets/angryBird.jpg"),
+            name: "愤怒的小鸟",
+            gameType: "relax",
+            gameUrl: "/static/angrybirds/index.html",
           },
           {
             id: 2,
-            url: require("../assets/game1.png"),
-            name: "game2",
-            gameType: "action",
-            gameDescription: "funny funny funny funny funny funny funny funny "
+            url: require("../assets/watermelon.jpg"),
+            name: "合成西瓜",
+            gameType: "relax",
+            gameUrl: "/static/watermelon/index.html",
           },
           {
             id: 3,
-            url: require("../assets/game1.png"),
-            name: "game3",
-            gameType: "action",
-            gameDescription: "funny funny funny funny funny funny funny funny "
+            url: require("../assets/chazhen.jpg"),
+            name: "见缝插针",
+            gameType: "relax",
+            gameUrl: "/static/needle/index.html",
           },
           {
             id: 4,
-            url: require("../assets/game1.png"),
-            name: "game4",
-            gameType: "action",
-            gameDescription: "funny funny funny funny funny funny funny funny "
+            url: require("../assets/game1.jpg"),
+            name: "原神",
+            gameType: "role playing",
+            gameUrl: "#",
           },
           {
             id: 5,
-            url: require("../assets/game1.png"),
-            name: "game5",
+            url: require("../assets/game2.jpg"),
+            name: "王者荣耀",
+            gameType: "moba",
+            gameUrl: "#",
+          },
+          {
+            id: 6,
+            url: require("../assets/game3.jpg"),
+            name: "魂斗罗",
             gameType: "action",
-            gameDescription: "funny funny funny funny funny funny funny funny "
-          }
-        ]
-      };
+            gameUrl: "#",
+          },
+        ],
+      }
     },
     methods: {
       onSearch() {
