@@ -97,7 +97,7 @@
             gameType: "船新版本！",
             author: "Shinenine",
             gameUrl: "/static/watermelon/index.html",
-            gameDescription: "2021年最火的休闲小游戏带着它的镜像小游戏一起回来啦！"
+            gameDescription: "2021年最火的休闲小游戏带着它的镜像小游戏一起回来啦！全新地图，全新界面！"
           },
           {
             id: 3,
@@ -106,7 +106,7 @@
             gameType: "relax",
             author: "mooneater0",
             gameUrl: "/static/needle/index.html",
-            gameDescription: "重出江湖 十分轻松休闲的一款小游戏"
+            gameDescription: "考验反应力的休闲小游戏--见缝插针回来啦！可爱的皮肤，丰富的玩法，快来挑战你的手速吧！"
           }
         ],
         highest: [{
