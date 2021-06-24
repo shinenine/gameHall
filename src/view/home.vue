@@ -87,7 +87,7 @@
             name: "3D愤怒的小鸟",
             gameType: "最受欢迎的经典益智弹弓小鸟游戏回来了！",
             author: "Ultrasty",
-            gameUrl: "#",
+            gameUrl: "/static/angrybirds/index.html",
             gameDescription: "愤怒小鸟的老玩家？愤怒小鸟经典游戏，你热爱的一切，都还在！而且增添了3D元素。选择要弹出的小鸟，与好友一同玩乐、抢攻多阶段关卡、与全球玩家竞赛合作。"
           },
           {
